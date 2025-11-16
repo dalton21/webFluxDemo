@@ -12,7 +12,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Nodo {
 
     @Id
-    private long id;
+    private String id;
 
     private String titulo;
 

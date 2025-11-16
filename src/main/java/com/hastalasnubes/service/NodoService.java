@@ -7,5 +7,5 @@ import reactor.core.publisher.Mono;
 public interface NodoService {
     Mono<Nodo> saveNodo(Nodo employee);
     Flux<Nodo> getAllNodos();
-    Mono<Nodo> getNodoById(long id);
+    Mono<Nodo> getNodoById(String id);
 }

@@ -4,7 +4,7 @@ import com.hastalasnubes.model.Nodo;
 import org.springframework.data.repository.reactive.ReactiveCrudRepository;
 import reactor.core.publisher.Mono;
 
-public interface NodoRepository extends ReactiveCrudRepository<Nodo, Long> {
+public interface NodoRepository extends ReactiveCrudRepository<Nodo, String> {
 
     Mono<Nodo> findByTitulo(String titulo);
 

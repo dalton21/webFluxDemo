@@ -31,7 +31,7 @@ public class NodoServiceImpl implements NodoService {
     }
 
     @Override
-    public Mono<Nodo> getNodoById(long id) {
+    public Mono<Nodo> getNodoById(String id) {
         return nodoRepository.findById(id);
     }
 

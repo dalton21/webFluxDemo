@@ -32,7 +32,7 @@ public class NodoController {
     }
 
     @GetMapping("{id}")
-    public Mono<Nodo> getNodoById(@PathVariable("id") long nodoId){
+    public Mono<Nodo> getNodoById(@PathVariable("id") String nodoId){
         return nodoService.getNodoById(nodoId);
     }
 
